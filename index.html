@@ -1,44 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="./styles.css">
-   <title>cerveja</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jokenpô</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
-
 <body>
-   <header>
-      <img src="./img/beer.jpeg" alt="cerveja" class="img-beer">
-      <h1> Delivery <br>de bebidas</h1>
-
-
-
-      <a href="https://www.linkedin.com/feed/">
-         <button class="button-header" onclick="operating-result">Entre</button>
-      </a>
-
-
-   </header>
-
-   <section>
-
-      <p class="abertura"> bebida rápida,com drinks e cervejas geladas!!!
-         <br>Vamos aproveitar as ofertas?
-      </p>
-
-
-
-
-      <input placeholder="Insira seu endereço" id="obterLocalizaçao"></input>
-
-
-   </section>
-
+  <div class="container">
+    <h1> jokenpô</h1>
+    <div class="buttons">
+      <button id="rock" onclick="playHuman('rock')">&#x1F44A</button>
+      <button id="paper" onclick="playHuman('paper')">&#x270B</button>
+      <button id="scissors" onclick="playHuman('scissors')">&#x270C</button>
+    </div>
+        <p id="result"></p>
+        <p class="your-score"> Sua pontuação : <span id="human-score">0</span></p>
+        <p class="machine-score"> pontuação da alexa : <span id="machine-score">0</span></p>
+    </div>
+    <img id="imagem" src="./img/euro.png " alt="minha imagem">
 </body>
-
+<script src="./script.js"></script> 
 </html>
